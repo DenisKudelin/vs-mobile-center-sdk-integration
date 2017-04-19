@@ -1,0 +1,1 @@
+﻿module.exports = require("./lib/vs-mobile-center-sdk-integration/index");
