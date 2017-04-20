@@ -1,4 +1,38 @@
-﻿/*import * as FS from "fs";
+﻿import { run } from "./SdkIntegration";
+import * as FS from "fs";
+
+/*var GitHubApi = require("github");
+
+var github = new GitHubApi({
+    // optional 
+    debug: true,
+    protocol: "https",
+    host: "api.github.com", // should be api.github.com for GitHub 
+    pathPrefix: "/api/v3", // for some GHEs; none for GitHub 
+    headers: {
+        "user-agent": "My-Cool-GitHub-App" // GitHub is happy with a unique user agent 
+    },
+    Promise: require('bluebird'),
+    followRedirects: false, // default: true; there's currently an issue with non-get redirects, so allow ability to disable follow-redirects 
+    timeout: 5000
+});
+
+github.authenticate({
+    type: "oauth",
+    token: FS.readFileSync("D:\\githubTestToken.txt", "utf8")
+});
+
+github.repos.fork({
+    owner: "DenisKudelin",
+    repo: "mobile-center-sdk-test",
+}, () => {
+    debugger;
+})*/
+
+run("github", "DenisKudelin", "Alarm", "master")
+    .then(() => process.exit(), () => process.exit(1));
+
+/*import * as FS from "fs";
 import { runXcodeSDKIntegration, MobileCenterSDKModule } from "./SDKIntegration/XcodeSDKIntegrationSteps";
 
 const errors: string[] = [];

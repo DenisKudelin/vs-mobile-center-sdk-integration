@@ -36,7 +36,10 @@
     "xml2js": "0.4.17",
     "tsconfig-extended-typescript-builder": "0.0.2",
     "globule": "1.1.0",
-    "ncp": "2.0.0"
+    "ncp": "2.0.0",
+    "mkdirp": "0.5.1",
+    "rimraf": "2.6.1",
+    "btoa": "1.1.2"
   },
   "engines": {
     "node": ">=4.6.0"
